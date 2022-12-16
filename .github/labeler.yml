@@ -1,7 +1,2 @@
-repo:
-- "*"
-
-testapp:
-- "apps/mock-server/**/*"
-- "apps/my-app/**/*"
-- "libs/mock-data/**/*"
+RootFiles:
+ - /*.yml
