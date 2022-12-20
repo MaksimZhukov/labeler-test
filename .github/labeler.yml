@@ -1,2 +1,6 @@
 RootFiles:
  - '*.md'
+
+@domain/core:
+- package/core/*
+- package/core/**/*
