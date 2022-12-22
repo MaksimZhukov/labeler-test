@@ -7,8 +7,11 @@ jobs:
     name: Latest
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        sudo npm install forever -g
+    - uses: actions/checkout@v3
+    - name: install
+      run: sudo npm install forever -g  
+    - name: start
+      run: |
         forever start server.js
         curl localhost:8008
         forever stop server.js
@@ -17,9 +20,12 @@ jobs:
   ubuntu20:
     name: '20.04'
     runs-on: ubuntu-20.04
-    steps:
-    - run: |
-        sudo npm install forever -g
+    steps:    
+    - uses: actions/checkout@v3
+    - name: install
+      run: sudo npm install forever -g  
+    - name: start
+      run: |
         forever start server.js
         curl localhost:8008
         forever stop server.js
