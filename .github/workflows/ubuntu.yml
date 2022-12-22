@@ -7,10 +7,10 @@ jobs:
     name: Latest
     runs-on: ubuntu-latest
     steps:
-    - run: sudo netstat -tunlp
+    - run: netstat -tlpen | grep 8008
     
   ubuntu20:
     name: 20.04
     runs-on: ubuntu-20.04
     steps:
-    - run: sudo netstat -tunlp
+    - run: netstat -tlpen | grep 8008
