@@ -7,10 +7,20 @@ jobs:
     name: Latest
     runs-on: ubuntu-latest
     steps:
-    - run: sudo netstat -tlpen | grep 8008
+    - run: |
+        sudo npm install forever -g
+        forever start server.js
+        curl localhost:8008
+        forever stop server.js
+        
     
   ubuntu20:
-    name: 20.04
+    name: '20.04'
     runs-on: ubuntu-20.04
     steps:
-    - run: sudo netstat -tlpen | grep 8008
+    - run: |
+        sudo npm install forever -g
+        forever start server.js
+        curl localhost:8008
+        forever stop server.js
+        
