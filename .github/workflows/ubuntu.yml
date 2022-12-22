@@ -13,7 +13,7 @@ jobs:
     - name: start
       run: |
         forever start server.js
-        curl localhost:8008
+        sudo curl localhost:8008
         forever stop server.js
         
     
@@ -27,6 +27,6 @@ jobs:
     - name: start
       run: |
         forever start server.js
-        curl localhost:8008
+        sudo curl localhost:8008
         forever stop server.js
         
