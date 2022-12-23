@@ -1,5 +1,6 @@
 namespace HealthChecks.Kafka
 {
+    
     public class KafkaHealthCheck : Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck, System.IDisposable
     {
         public KafkaHealthCheck(HealthChecks.Kafka.KafkaHealthCheckOptions options) { }
