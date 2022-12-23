@@ -4,3 +4,6 @@ RootFiles:
 '@domain/core':
 - package/core/*
 - package/core/**/*
+
+'test':
+- all: ['!package/**/*.md']
