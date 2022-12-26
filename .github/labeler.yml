@@ -6,4 +6,5 @@
 # - package/core/**/*
 
 'test':
-- any: ['!test/**/*.approved.txt', 'test/**/*.approved.txt']
+- any: ['test/**/*']
+  all: ['!test/**/*.approved.txt']
