@@ -1,9 +1,9 @@
-# RootFiles:
-#  - '*.md'
+RootFiles:
+ - '*.md'
 
-# '@domain/core':
-# - package/core/*
-# - package/core/**/*
+'@domain/core':
+- package/core/*
+- package/core/**/*
 
 'test':
 - any: ['test/**/*']
