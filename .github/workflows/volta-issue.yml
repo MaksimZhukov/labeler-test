@@ -1,0 +1,13 @@
+name: Test Volta
+on:
+  workflow_dispatch:
+
+jobs:
+  setup-python:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:      
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: 'package.json'
