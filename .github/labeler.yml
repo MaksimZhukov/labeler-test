@@ -8,3 +8,5 @@ RootFiles:
 'test':
 - any: ['test/**/*']
   all: ['!test/**/*.approved.txt']
+
+LabelString: example2/*
