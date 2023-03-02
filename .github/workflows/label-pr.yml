@@ -1,6 +1,6 @@
 name: 'Labeler on pull_request event'
 on:
-  - pull_request
+  - pull_request_target
 
 jobs:
   triage:
@@ -10,6 +10,6 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v4
+      - uses: maksimzhukov/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
