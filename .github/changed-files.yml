@@ -3,13 +3,13 @@ CFString:
 
 CFAny:
 - changed-files: 
-  - any: ['**', '.*', '.*/**']
+  - any: ['**']
 
 CFAll:
 - changed-files: 
-  - all: ['**', '.*', '.*/**']
+  - all: ['**']
 
 CFAllAndAny:
 - changed-files: 
-  - all: ['**', '.*', '.*/**']
-    any: ['**', '.*', '.*/**']
+  - all: ['**']
+    any: ['**']

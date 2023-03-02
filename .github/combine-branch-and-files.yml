@@ -1,4 +1,4 @@
 BranchesAndFiles:
 - base-branch: ['main']
 - changed-files: 
-  - any: ['**', '.*', '.*/**']
+  - any: ['**']

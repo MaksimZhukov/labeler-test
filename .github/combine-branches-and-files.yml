@@ -2,4 +2,4 @@ BranchesAndFiles:
 - head-branch: ['new']
 - base-branch: ['main']
 - changed-files: 
-  - any: ['**', '.*', '.*/**']
+  - any: ['**']
