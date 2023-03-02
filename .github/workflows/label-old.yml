@@ -1,0 +1,69 @@
+name: Test original action
+on:
+  - pull_request_target
+
+jobs:
+  job1:
+    name: Strings Array
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/strings-array.yml
+
+  job2:
+    name: Simple string
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/simple-string.yml
+
+  job3:
+    name: Non-existent config
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/non-existent-config.yml
+
+  job4:
+    name: Any on top lavel
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/any-on-top.yml
+
+  job5:
+    name: Any on top lavel
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/any-and-string-on-top.yml

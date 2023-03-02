@@ -1,0 +1,3 @@
+HeadAndBase:
+- head-branch: ['new']
+- base-branch: ['main']

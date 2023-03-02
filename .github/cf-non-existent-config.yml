@@ -1,0 +1,3 @@
+CFNonExistent:
+- changed-files: 
+  - something: ['**', '.*', '.*/**']

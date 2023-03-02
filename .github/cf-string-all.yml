@@ -1,0 +1,4 @@
+CFAllString:
+- changed-files: 
+  - all: ['**', '.*', '.*/**']
+  - '**'

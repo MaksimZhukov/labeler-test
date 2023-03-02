@@ -1,0 +1,17 @@
+HeadArray:
+- head-branch: ['new']
+
+HeadString:
+- head-branch: 'new'
+
+HeadRegex:
+- head-branch: ['/e/']
+
+BaseArray:
+- base-branch: ['main']
+
+BaseString:
+- base-branch: 'main'
+
+BaseRegex:
+- base-branch: ['/ai/']

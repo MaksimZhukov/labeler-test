@@ -1,0 +1,15 @@
+CFString:
+- changed-files: '**'
+
+CFAny:
+- changed-files: 
+  - any: ['**', '.*', '.*/**']
+
+CFAll:
+- changed-files: 
+  - all: ['**', '.*', '.*/**']
+
+CFAllAndAny:
+- changed-files: 
+  - all: ['**', '.*', '.*/**']
+    any: ['**', '.*', '.*/**']
