@@ -1,17 +1,17 @@
 HeadArray:
-- head-branch: ['new']
+- head-branch: ['new'] # добавить несколько элементов
 
 HeadString:
 - head-branch: 'new'
 
 HeadRegex:
-- head-branch: ['/e/']
+- head-branch: ['/e/'] # разобраться почему не работает
 
 BaseArray:
-- base-branch: ['main']
+- base-branch: ['main'] # добавить несколько элементов
 
 BaseString:
 - base-branch: 'main'
 
 BaseRegex:
-- base-branch: ['/ai/']
+- base-branch: ['/ai/'] # разобраться почему не работает
