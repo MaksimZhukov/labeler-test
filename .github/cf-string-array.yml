@@ -1,0 +1,5 @@
+StringsArray:
+- changed-files: 
+  - '**'
+  - '.*'
+  - '.*/**'
