@@ -8,9 +8,6 @@ jobs:
     name: Ubuntu test
     runs-on: ubuntu-latest
     steps:    
-      - name: ulimit 0
-        run: |
-          ulimit -h
       - name: ulimit 1
         run: |
           sudo prlimit --pid $$ --nofile=1048576:1048576 
