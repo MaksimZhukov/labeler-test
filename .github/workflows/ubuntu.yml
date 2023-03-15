@@ -11,10 +11,11 @@ jobs:
       - name: ulimit 1
         run: |
           sudo prlimit --pid $$ --nofile=1048576:1048576 
-          ulimit -n
+          ulimit -a
       - name: ulimit 2
         run: |
           sudo prlimit --pid $$ --rttime=unlimited
+          ulimit -a
       - name: ulimit 3
         run: |
           ulimit -a
