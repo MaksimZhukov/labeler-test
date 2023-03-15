@@ -15,11 +15,13 @@ jobs:
           
       - name: ulimit 2
         run: |
-          sudo prlimit --pid $$ --rttime=unlimited
+          sudo prlimit --pid $$ --nproc=128391
           ulimit -a
           
       - name: ulimit 3
         run: |
+          sudo prlimit --pid $$ --nofile=1048576:1048576 
+          sudo prlimit --pid $$ --nproc=128391
           ulimit -a
 
       - name: ulimit 3
