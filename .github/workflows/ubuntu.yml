@@ -1,0 +1,18 @@
+name: Ubuntu test
+
+on:
+  - workflow_dispatch
+
+jobs:
+  test:
+    name: Ubuntu test
+    runs-on: ubuntu-latest
+    steps:    
+      - name: ulimit 1
+        run: |
+          sudo prlimit --pid $$ --nofile=1048576:1048576 
+          ulimit -n
+      - name: ulimit 2
+        run: |
+          sudo prlimit --pid $$ --rttime=unlimited
+          ulimit -y
