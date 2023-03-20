@@ -11,7 +11,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/strings-array.yml
@@ -24,7 +24,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/simple-string.yml
@@ -37,7 +37,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/non-existent-config.yml
@@ -50,7 +50,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/any-on-top.yml
@@ -63,7 +63,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/changed-files.yml
@@ -76,7 +76,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-non-existent-config.yml
@@ -89,7 +89,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-all.yml
@@ -102,7 +102,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-any.yml
@@ -115,7 +115,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/branches.yml
@@ -128,7 +128,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branch-and-files.yml
@@ -141,7 +141,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches-and-files.yml
@@ -154,7 +154,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches.yml
@@ -167,7 +167,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: maksimzhukov/labeler@main
+      - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-array.yml
