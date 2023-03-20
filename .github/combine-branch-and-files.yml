@@ -1,4 +1,4 @@
-BranchesAndFiles:
+BaseAndFiles:
 - base-branch: ['main']
 - changed-files: 
   - any: ['**']

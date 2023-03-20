@@ -171,3 +171,16 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-array.yml
+
+  job14:
+    name: Combine branches and files Error
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: joshdales/labeler@main
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/combine-branches-and-files-error.yml

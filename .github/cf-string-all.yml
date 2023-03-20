@@ -2,3 +2,8 @@ CFAllString:
 - changed-files: 
   - all: ['**']
   - '**'
+
+CFAllStringReverse:
+- changed-files: 
+  - '**'
+  - all: ['**']
