@@ -1,0 +1,7 @@
+HeadNonExistent:
+- head-branch: 
+    - any: 'new'
+
+BaseNonExistent:
+- base-branch: 
+    - any: 'new'
