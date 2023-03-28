@@ -17,9 +17,9 @@ BranchesAndFilesAnyAndAll:
   - base-branch: ['main']
   - changed-files: ['**', '**']
 
-BranchesAndFiles(Any)AndAll:
-changed-files: ['**', '**']
-- all:
-  - head-branch: ['new']
-  - base-branch: ['main']
-  - changed-files: ['**', '**']
+# BranchesAndFiles(Any)AndAll:
+# changed-files: ['**', '**']
+# - all:
+#   - head-branch: ['new']
+#   - base-branch: ['main']
+#   - changed-files: ['**', '**']
