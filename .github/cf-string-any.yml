@@ -1,9 +1,0 @@
-CFAnyString:
-- changed-files: 
-  - any: ['**']
-  - '**'
-
-CFAnyStringReverse:
-- changed-files: 
-  - '**'
-  - any: ['**']

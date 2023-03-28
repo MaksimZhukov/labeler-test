@@ -81,21 +81,8 @@ jobs:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-non-existent-config.yml
 
-  job7:
-    name: Changed files string all
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: joshdales/labeler@main
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/cf-string-all.yml
-
   job8:
-    name: Changed files string any
+    name: Changed files inner any and all
     permissions:
       contents: read
       pull-requests: write
@@ -105,7 +92,7 @@ jobs:
       - uses: joshdales/labeler@main
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/cf-string-any.yml
+          configuration-path: .github/cf-inner-any-and-all.yml
 
   job9:
     name: Branches

@@ -1,10 +1,10 @@
-StringsArrayError:
-- changed-files: 
-  - '**'
-  - '.*'
-  - '.*/**'
+# StringsArrayError:
+# - changed-files: 
+#   - '**'
+#   - '.*'
+#   - '.*/**'
 
 StringsArray:
 - changed-files: 
-  - '**'
+  - '.*'
   - '**'

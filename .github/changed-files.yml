@@ -2,14 +2,15 @@ CFString:
 - changed-files: '**'
 
 CFAny:
-- changed-files: 
-  - any: ['**']
+- any:
+  - changed-files: ['**']
 
 CFAll:
-- changed-files: 
-  - all: ['**']
+- all: 
+  - changed-files: ['**']
 
 CFAllAndAny:
-- changed-files: 
-  - all: ['**']
-    any: ['**']
+- any:
+  - changed-files: ['**', '**']
+- all: 
+  - changed-files: ['**', '**']

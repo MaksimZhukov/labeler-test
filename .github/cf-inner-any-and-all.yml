@@ -1,0 +1,4 @@
+CFInnerAnyAndAll:
+- changed-files: 
+  - any: ['**']
+    all: ['**']

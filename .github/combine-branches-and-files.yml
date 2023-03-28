@@ -1,5 +1,25 @@
-BranchesAndFiles:
+BranchesAndFilesAny:
 - head-branch: ['new']
 - base-branch: ['main']
-- changed-files: 
-  - any: ['**']
+- changed-files: ['**']
+
+BranchesAndFilesAll:
+- all:
+  - head-branch: ['new']
+  - base-branch: ['main']
+  - changed-files: ['**']
+
+BranchesAndFilesAnyAndAll:
+- any:
+  - changed-files: ['**', '**']
+- all:
+  - head-branch: ['new']
+  - base-branch: ['main']
+  - changed-files: ['**', '**']
+
+BranchesAndFiles(Any)AndAll:
+changed-files: ['**', '**']
+- all:
+  - head-branch: ['new']
+  - base-branch: ['main']
+  - changed-files: ['**', '**']

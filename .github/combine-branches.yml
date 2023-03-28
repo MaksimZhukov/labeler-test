@@ -1,3 +1,8 @@
-HeadAndBase:
+HeadAndBaseAny:
 - head-branch: ['new']
 - base-branch: ['main']
+
+HeadAndBaseAll:
+- all:
+  - head-branch: ['new']
+  - base-branch: ['main']
