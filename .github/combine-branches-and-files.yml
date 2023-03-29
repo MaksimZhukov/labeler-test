@@ -1,17 +1,49 @@
 BranchesAndFilesAny:
-- head-branch: ['new']
+- head-branch: ['new'] # "branch" patterns matched against new
 - base-branch: ['main']
 - changed-files: ['**']
 
-BranchesAndFilesAll:
+BranchesAndFilesAll: # "all" patterns matched all configs
 - all:
   - head-branch: ['new']
   - base-branch: ['main']
   - changed-files: ['**']
 
 BranchesAndFilesAnyAndAll:
+- any: # "any" patterns matched against [one file] ??
+  - changed-files: ['**', '**']
+- all: # "all" patterns matched all configs
+  - head-branch: ['new']
+  - base-branch: ['main']
+  - changed-files: ['**', '**']
+
+BranchesAndFilesAnyLast:
+- head-branch: ['adfaf']
+- base-branch: ['afdasfa']
+- changed-files: ['**']
+
+BranchesAndFilesAnyDidn'tMatch:
+- head-branch: ['adfaf']
+- base-branch: ['afdasfa']
+- changed-files: ['.*']
+
+BranchesAndFilesAllFirstMatch: 
+- all:
+  - head-branch: ['new']
+  - base-branch: ['adsfdfa']
+  - changed-files: ['.*']
+
+BranchesAndFilesAnyAndAllDidn'tMatch:
 - any:
   - changed-files: ['**', '**']
+- all:
+  - head-branch: ['new']
+  - base-branch: ['main']
+  - changed-files: ['.*']
+
+BranchesAndFilesAnyDidn'tMatchAndAll:
+- any:
+  - changed-files: ['.*']
 - all:
   - head-branch: ['new']
   - base-branch: ['main']
