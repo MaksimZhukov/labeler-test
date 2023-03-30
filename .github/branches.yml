@@ -1,17 +1,21 @@
 HeadArray:
-- head-branch: ['wrong', 'new']
+- head-branch: ['wrong', 'new'] # "branch" patterns matched against new
+
+HeadArrayLast:
+- all:
+  - head-branch: ['wrong', 'new'] # "branch" patterns matched against new
 
 HeadString:
-- head-branch: 'new'
+- head-branch: 'new' # "branch" patterns matched against new
 
 HeadRegex:
-- head-branch: ['^n']
+- head-branch: ['^n'] # "branch" pattern matched
 
 BaseArray:
-- base-branch: ['wrong', 'main']
+- base-branch: ['wrong', 'main'] # "branch" patterns matched
 
 BaseString:
-- base-branch: 'main'
+- base-branch: 'main' # "branch" patterns matched
 
 BaseRegex:
-- base-branch: ['^m']
+- base-branch: ['^m'] # "branch" patterns matched
