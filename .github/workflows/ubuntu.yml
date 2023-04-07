@@ -8,21 +8,19 @@ jobs:
     name: Ubuntu test
     runs-on: ubuntu-latest
     steps:    
-      - name: ulimit 1
+      - name: hostedtoolcache
         run: |
-          sudo prlimit --pid $$ --nofile=1048576:1048576 
-          ulimit -a
+          ls /opt/hostedtoolcache
           
-      - name: ulimit 2
+      - name: Java_Corretto_jdk
         run: |
-          sudo prlimit --pid $$ --nproc=128391
-          ulimit -a
+          ls /opt/hostedtoolcache/Java_Corretto_jdk
           
-      - name: ulimit 3
-        run: |
-          sudo prlimit --pid $$ --nofile=1048576:1048576 --nproc=128391
-          ulimit -a
+#       - name: ulimit 3
+#         run: |
+#           sudo prlimit --pid $$ --nofile=1048576:1048576 --nproc=128391
+#           ulimit -a
 
-      - name: ulimit 3
-        run: |
-          prlimit
+#       - name: ulimit 3
+#         run: |
+#           prlimit
