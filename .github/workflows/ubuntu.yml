@@ -12,9 +12,21 @@ jobs:
         run: |
           ls /opt/hostedtoolcache
           
-      - name: Java_Corretto_jdk
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '17'
+          
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+          
+      - name: hostedtoolcache
         run: |
-          ls /opt/hostedtoolcache/Java_Corretto_jdk
+          ls /opt/hostedtoolcache
           
 #       - name: ulimit 3
 #         run: |
