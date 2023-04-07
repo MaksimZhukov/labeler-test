@@ -26,7 +26,11 @@ jobs:
           
       - name: hostedtoolcache
         run: |
-          ls /opt/hostedtoolcache
+          ls /opt/hostedtoolcache/Java_Corretto_jdk
+          
+      - name: hostedtoolcache
+        run: |
+          ls /opt/hostedtoolcache/Java_Zulu_jdk
           
 #       - name: ulimit 3
 #         run: |
