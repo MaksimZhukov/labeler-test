@@ -1,2 +1,5 @@
 AnyOnTop:
-- any: ['**']
+- any: ['**', '.*']
+
+# "any" patterns did not match any configs
+# I think it is OK
