@@ -1,4 +1,6 @@
 StringsArray:
-- '**'
 - '.*'
+- '**'
 - '.*/**'
+
+# unexpected behavior
