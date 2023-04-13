@@ -1,1 +1,4 @@
+# works for the original action
+# should fail for the PR
+
 SimpleString: '**'

@@ -1,10 +1,10 @@
-name: Test original action
+name: Test the original action
 on:
   - pull_request_target
 
 jobs:
   job1:
-    name: Strings Array
+    name: Strings Array on top level
     permissions:
       contents: read
       pull-requests: write
@@ -17,7 +17,7 @@ jobs:
           configuration-path: .github/strings-array.yml
 
   job2:
-    name: Simple string
+    name: Simple string on top level
     permissions:
       contents: read
       pull-requests: write
@@ -30,7 +30,7 @@ jobs:
           configuration-path: .github/simple-string.yml
 
   job3:
-    name: Non-existent config
+    name: Non-existent config on top level
     permissions:
       contents: read
       pull-requests: write
@@ -69,7 +69,7 @@ jobs:
           configuration-path: .github/any-and-string-on-top.yml
 
   job6:
-    name: All and Any
+    name: All and Any on top lavel
     permissions:
       contents: read
       pull-requests: write

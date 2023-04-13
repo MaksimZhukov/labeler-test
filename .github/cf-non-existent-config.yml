@@ -1,3 +1,5 @@
 CFNonExistent:
 - changed-files: 
   - something: ['**', '.*', '.*/**']
+
+# invalid pattern +

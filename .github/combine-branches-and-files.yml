@@ -10,7 +10,7 @@ BranchesAndFilesAll: # "all" patterns matched all configs
   - changed-files: ['**']
 
 BranchesAndFilesAnyAndAll:
-- any: # "any" patterns matched against [one file] ??
+- any: # "any" patterns matched / the only one pattern was checked
   - changed-files: ['**', '**']
 - all: # "all" patterns matched all configs
   - head-branch: ['new']
@@ -20,17 +20,17 @@ BranchesAndFilesAnyAndAll:
 BranchesAndFilesAnyLast:
 - head-branch: ['adfaf']
 - base-branch: ['afdasfa']
-- changed-files: ['**']
+- changed-files: ['**'] # "any" patterns matched
 
-BranchesAndFilesAnyDidn'tMatch:
+BranchesAndFilesAnyDidn'tMatch: # "any" patterns did not match any configs
 - head-branch: ['adfaf']
 - base-branch: ['afdasfa']
 - changed-files: ['.*']
 
-BranchesAndFilesAllFirstMatch: 
+BranchesAndFilesAllFirstMatch:
 - all:
   - head-branch: ['new']
-  - base-branch: ['adsfdfa']
+  - base-branch: ['adsfdfa'] #  "branch" patterns did not match against main
   - changed-files: ['.*']
 
 BranchesAndFilesAnyAndAllDidn'tMatch:
@@ -39,19 +39,12 @@ BranchesAndFilesAnyAndAllDidn'tMatch:
 - all:
   - head-branch: ['new']
   - base-branch: ['main']
-  - changed-files: ['.*']
+  - changed-files: ['.*'] #  "all" patterns did not match
 
-BranchesAndFilesAnyDidn'tMatchAndAll:
+BranchesAndFilesAnyDidn'tMatchAndAll: # "any" patterns did not match any files
 - any:
   - changed-files: ['.*']
 - all:
   - head-branch: ['new']
   - base-branch: ['main']
   - changed-files: ['**', '**']
-
-# BranchesAndFiles(Any)AndAll:
-# changed-files: ['**', '**']
-# - all:
-#   - head-branch: ['new']
-#   - base-branch: ['main']
-#   - changed-files: ['**', '**']

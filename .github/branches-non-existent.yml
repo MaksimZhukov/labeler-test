@@ -1,5 +1,5 @@
 HeadNonExistent:
-- head-branch: 
+- head-branch: # "branch" patterns matched against new WHY?
     - any: 'new'
 
 BaseNonExistent:

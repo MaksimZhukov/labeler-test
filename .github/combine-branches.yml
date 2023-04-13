@@ -1,8 +1,8 @@
-HeadAndBaseAny:
-- head-branch: ['new']
+HeadAndBaseAny: 
+- head-branch: ['new'] # "branch" pattern matched
 - base-branch: ['main']
 
 HeadAndBaseAll:
-- all:
+- all: # "all" patterns matched all configs
   - head-branch: ['new']
   - base-branch: ['main']

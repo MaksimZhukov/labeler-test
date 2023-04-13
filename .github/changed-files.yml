@@ -1,24 +1,18 @@
 CFString:
-- changed-files: '**'
-
-# "any" patterns matched +
+- changed-files: '**' # works as ANY / "any" patterns matched +
 
 CFAny:
 - any:
-  - changed-files: ['**']
-
-# "any" patterns matched +
+  - changed-files: ['**'] # "any" patterns matched +
 
 CFAll:
 - all: 
-  - changed-files: ['**']
-
-# "all" patterns matched all files +
+  - changed-files: ['**'] # "all" patterns matched all files +
 
 CFAllAndAny:
 - any:
   - changed-files: ['.*', '**'] # "any" patterns matched 
-  # I thoought any of 'any' patterns should be matched against all files, but the only one was checked
+  # I thought all of 'any' patterns should match against any file, but the only one was checked
   # It looks like a regression 
 - all: 
   - changed-files: ['**', '**'] # "all" patterns matched all files +

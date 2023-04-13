@@ -1,10 +1,4 @@
-# StringsArrayError:
-# - changed-files: 
-#   - '**'
-#   - '.*'
-#   - '.*/**'
-
-StringsArray:
+CFStringsArray:
 - changed-files: 
   - '.*'
-  - '**'
+  - '**' #  "any" patterns matched

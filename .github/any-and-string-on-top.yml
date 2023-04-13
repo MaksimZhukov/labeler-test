@@ -1,3 +1,5 @@
+#  Added this test to check how the original action works
+
 AnyAndStringOnTop:
 - '.*'
 - any: ['**']

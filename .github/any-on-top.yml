@@ -1,5 +1,5 @@
+# works for the original action
+# does not work for the PR
+
 AnyOnTop:
 - any: ['**', '.*']
-
-# "any" patterns did not match any configs
-# I think it is OK

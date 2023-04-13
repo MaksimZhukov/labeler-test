@@ -1,3 +1,6 @@
+# works for the original action. It is a bug
+# should fail for the PR
+
 NonExistentConfig:
 - branch:
   - '**'

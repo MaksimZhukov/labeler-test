@@ -1,6 +1,0 @@
-BranchesAndFilesError:
-- any:
-  - changed-files: ['**']
-- all:
-  - head-branch: ['new']
-  - base-branch: ['adfafa']
