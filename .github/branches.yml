@@ -4,6 +4,7 @@ HeadArray:
 HeadArrayLast:
 - all:
   - head-branch: ['wrong', 'new'] # "branch" patterns matched against new +
+  # since only one pattern has to match we need to reflect it in the documentation properly
 
 HeadString:
 - head-branch: 'new' # "branch" patterns matched against new +
@@ -19,3 +20,8 @@ BaseString:
 
 BaseRegex:
 - base-branch: ['^m'] # "branch" patterns matched +
+
+BaseArrayLast:
+- all:
+  - base-branch: ['wrong', 'main'] # "branch" patterns matched against main +
+  # since only one pattern has to match we need to reflect it in the documentation properly

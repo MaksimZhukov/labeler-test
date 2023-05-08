@@ -11,7 +11,7 @@ BranchesAndFilesAll: # "all" patterns matched all configs
 
 BranchesAndFilesAnyAndAll:
 - any: # "any" patterns matched / the only one pattern was checked
-  - changed-files: ['**', '**']
+  - changed-files: ['.*', '**']
 - all: # "all" patterns matched all configs
   - head-branch: ['new']
   - base-branch: ['main']
