@@ -4,4 +4,4 @@ HeadNonExistent:
 
 BaseNonExistent:
 - base-branch: 
-    - any: 'new'
+    - any: 'main'

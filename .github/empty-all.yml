@@ -1,0 +1,4 @@
+EmptyAll:
+- any:
+  - changed-files: ['**']
+- all:
