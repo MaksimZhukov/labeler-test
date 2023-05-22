@@ -8,12 +8,14 @@ jobs:
     name: Test python
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2.7.0
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v4.4.0
         with:
           python-version: pypy-3.9
           check-latest: true
+      
+      - uses: maksimzhukov/labeler@v2.0.0
           
       - name: Setup Python
         uses: actions/setup-python@v4
