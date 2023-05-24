@@ -1,0 +1,22 @@
+frontend:
+- any:
+  - changed-files: ['src/**/*.js']
+- all:
+  - changed-files: ['!src/main.js']
+  - base-branch: 'main'
+
+feature:
+- head-branch: ['^feature', 'feature']
+
+release:
+- base-branch: 'main'
+
+test1:
+- all:
+  - base-branch: 'main'
+  - head-branch: '^feature'
+
+test2:
+- any:
+  - changed-files: ['src/**/*.js', '__tests__/**/*.js']
+  - head-branch: '^feature'
