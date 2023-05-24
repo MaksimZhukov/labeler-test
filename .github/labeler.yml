@@ -18,5 +18,5 @@ test1:
 
 test2:
 - any:
-  - changed-files: ['src/**/*.js', '__tests__/**/*.js']
+  - changed-files: ['__tests__/**/*.js', 'src/**/*.js']
   - head-branch: '^feature'
