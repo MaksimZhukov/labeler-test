@@ -3,6 +3,7 @@ namespace HealthChecks.Kafka
     public class KafkaHealthCheck : Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck, System.IDisposable
     {
         public KafkaHealthCheck(HealthChecks.Kafka.KafkaHealthCheckOptions options) { }
+        
         public System.Threading.Tasks.Task<Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult> CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext context, System.Threading.CancellationToken cancellationToken = default) { }
         public void Dispose() { }
     }
