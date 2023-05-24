@@ -11,7 +11,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/strings-array.yml
@@ -25,7 +25,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/simple-string.yml
@@ -39,7 +39,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/non-existent-config.yml
@@ -53,7 +53,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/any-on-top.yml
@@ -67,7 +67,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/changed-files.yml
@@ -81,7 +81,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-non-existent-config.yml
@@ -95,7 +95,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-inner-any-and-all.yml
@@ -109,7 +109,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/branches.yml
@@ -123,7 +123,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branch-and-files.yml
@@ -137,7 +137,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches-and-files.yml
@@ -151,7 +151,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches.yml
@@ -165,7 +165,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-array.yml
@@ -179,7 +179,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/branches-non-existent.yml
@@ -193,7 +193,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/empty-all.yml
@@ -207,7 +207,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/all-non-existent.yml
@@ -221,7 +221,7 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0-beta.1
+      - uses: maksimzhukov/labeler@v5.0.0-beta.1
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/labeler.yml
