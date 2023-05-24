@@ -15,6 +15,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/strings-array.yml
+          sync-labels: true
 
   job2:
     name: Simple string on top level
@@ -28,6 +29,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/simple-string.yml
+          sync-labels: true
 
   job3:
     name: Non-existent config on top level
@@ -41,6 +43,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/non-existent-config.yml
+          sync-labels: true
 
   job4:
     name: Any on top lavel
@@ -54,6 +57,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/any-on-top.yml
+          sync-labels: true
 
   job5:
     name: Changed files
@@ -67,6 +71,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/changed-files.yml
+          sync-labels: true
 
   job6:
     name: Changed files non-existent config
@@ -80,6 +85,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-non-existent-config.yml
+          sync-labels: true
 
   job8:
     name: Changed files inner any and all
@@ -93,6 +99,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-inner-any-and-all.yml
+          sync-labels: true
 
   job9:
     name: Branches
@@ -106,6 +113,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/branches.yml
+          sync-labels: true
 
   job10:
     name: Combine branch and files
@@ -119,6 +127,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branch-and-files.yml
+          sync-labels: true
 
   job11:
     name: Combine branches and files
@@ -132,6 +141,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches-and-files.yml
+          sync-labels: true
 
   job12:
     name: Combine branches
@@ -145,6 +155,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/combine-branches.yml
+          sync-labels: true
 
   job13:
     name: Changed files string array
@@ -158,6 +169,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/cf-string-array.yml
+          sync-labels: true
 
   job15:
     name: Branches non-existent
@@ -171,6 +183,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/branches-non-existent.yml
+          sync-labels: true
 
   job16:
     name: Empty all
@@ -184,6 +197,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/empty-all.yml
+          sync-labels: true
 
   job17:
     name: Non existent all
@@ -197,6 +211,7 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/all-non-existent.yml
+          sync-labels: true
 
   job18:
     name: Check README
@@ -210,3 +225,4 @@ jobs:
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
           configuration-path: .github/labeler.yml
+          sync-labels: true
