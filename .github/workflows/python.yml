@@ -15,7 +15,7 @@ jobs:
           python-version: pypy-3.9
           check-latest: true
       
-      - uses: maksimzhukov/labeler@v2.0.0
+      - uses: maksimzhukov/labeler@4.1.0
           
       - name: Setup Python
         uses: actions/setup-python@v4
