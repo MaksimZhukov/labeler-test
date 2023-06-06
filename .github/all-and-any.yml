@@ -2,4 +2,4 @@
 
 AllAndAny:
 - all: ['**']
-  any: ['**']
+  # any: ['**']
