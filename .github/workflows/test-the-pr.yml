@@ -1,228 +1,228 @@
-name: Test the PR
-on:
-  - pull_request_target
+# name: Test the PR
+# on:
+#   - pull_request_target
 
-jobs:
-  job1:
-    name: Strings array on top level
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/strings-array.yml
+# jobs:
+#   job1:
+#     name: Strings array on top level
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/strings-array.yml
           
 
-  job2:
-    name: Simple string on top level
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/simple-string.yml
+#   job2:
+#     name: Simple string on top level
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/simple-string.yml
           
 
-  job3:
-    name: Non-existent config on top level
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/non-existent-config.yml
+#   job3:
+#     name: Non-existent config on top level
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/non-existent-config.yml
           
 
-  job4:
-    name: Any on top lavel
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/any-on-top.yml
+#   job4:
+#     name: Any on top lavel
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/any-on-top.yml
           
 
-  job5:
-    name: Changed files
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/changed-files.yml
+#   job5:
+#     name: Changed files
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/changed-files.yml
           
 
-  job6:
-    name: Changed files non-existent config
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/cf-non-existent-config.yml
+#   job6:
+#     name: Changed files non-existent config
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/cf-non-existent-config.yml
           
 
-  job8:
-    name: Changed files inner any and all
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/cf-inner-any-and-all.yml
+#   job8:
+#     name: Changed files inner any and all
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/cf-inner-any-and-all.yml
           
 
-  job9:
-    name: Branches
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/branches.yml
+#   job9:
+#     name: Branches
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/branches.yml
           
 
-  job10:
-    name: Combine branch and files
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/combine-branch-and-files.yml
+#   job10:
+#     name: Combine branch and files
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/combine-branch-and-files.yml
           
 
-  job11:
-    name: Combine branches and files
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/combine-branches-and-files.yml
+#   job11:
+#     name: Combine branches and files
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/combine-branches-and-files.yml
           
 
-  job12:
-    name: Combine branches
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/combine-branches.yml
+#   job12:
+#     name: Combine branches
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/combine-branches.yml
           
 
-  job13:
-    name: Changed files string array
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/cf-string-array.yml
+#   job13:
+#     name: Changed files string array
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/cf-string-array.yml
           
 
-  job15:
-    name: Branches non-existent
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/branches-non-existent.yml
+#   job15:
+#     name: Branches non-existent
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/branches-non-existent.yml
           
 
-  job16:
-    name: Empty all
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/empty-all.yml
+#   job16:
+#     name: Empty all
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/empty-all.yml
           
 
-  job17:
-    name: Non existent all
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/all-non-existent.yml
+#   job17:
+#     name: Non existent all
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/all-non-existent.yml
           
 
-  job18:
-    name: Check README
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: maksimzhukov/labeler@v5.0.0-beta.1
-        with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
-          configuration-path: .github/labeler.yml
+#   job18:
+#     name: Check README
+#     permissions:
+#       contents: read
+#       pull-requests: write
+#       issues: write
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: maksimzhukov/labeler@v5.0.0-beta.1
+#         with:
+#           repo-token: '${{ secrets.GITHUB_TOKEN }}'
+#           configuration-path: .github/labeler.yml
           
