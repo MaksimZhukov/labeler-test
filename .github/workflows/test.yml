@@ -1,0 +1,58 @@
+name: Webview issue
+on:
+  workflow_dispatch:
+
+jobs:
+  reproduce:    
+    name: Reproduce issue with the fixed runtime
+    runs-on: windows-latest
+    steps:       
+    - name: Download and extract
+      run: |
+        $Url = "https://github.com/softworkz/WebView2_WinUI3_Sample/releases/download/Test_01/fixed_runtime.zip"
+        (New-Object System.Net.WebClient).DownloadFile($Url, "./fixed_runtime.zip")
+        7z.exe "x" "./fixed_runtime.zip" -o"./" -y
+    - name: Install app
+      run: |
+        $projectPath = "D:/a/test/test/WebView2_WinUI3_Sample (Package)_1.0.3.0_x64_Test"
+        $certPath = "$($projectPath)/WebView2_WinUI3_Sample (Package)_1.0.3.0_x64.cer"
+        certutil.exe -addstore TrustedPeople $certPath
+        Import-Module -Name Appx -UseWindowsPowerShell
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.WindowsAppRuntime.1.5.msix"
+        $msixPackagePath = Get-ChildItem -Path "$($projectPath)/WebView2_WinUI3_Sample (Package)_*_x64.msix" -File | Select-Object -ExpandProperty FullName
+        Add-AppxPackage -Path $msixPackagePath
+        Get-AppxPackage a6e38587-f17a-4a2e-8022-248694f372b3
+    - name: Run app
+      run: |
+        Start-Process shell:AppsFolder\a6e38587-f17a-4a2e-8022-248694f372b3_yps17xarsp2at!App
+        Start-Sleep 30
+        tasklist
+        
+  expected:    
+    name: Expected behaviour with the system runtime
+    runs-on: windows-latest
+    steps:       
+    - name: Download and extract
+      run: |
+        $Url = "https://github.com/softworkz/WebView2_WinUI3_Sample/releases/download/Test_01/system_runtime.zip"
+        (New-Object System.Net.WebClient).DownloadFile($Url, "./system_runtime.zip")
+        7z.exe "x" "./system_runtime.zip" -o"./" -y
+    - name: Install app
+      run: |
+        $projectPath = "D:/a/test/test/WebView2_WinUI3_Sample (Package)_1.0.2.0_x64_Test"
+        $certPath = "$($projectPath)/WebView2_WinUI3_Sample (Package)_1.0.2.0_x64.cer"
+        certutil.exe -addstore TrustedPeople $certPath
+        Import-Module -Name Appx -UseWindowsPowerShell
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+        Add-AppxPackage -Path "$($projectPath)/Dependencies/x64/Microsoft.WindowsAppRuntime.1.5.msix"
+        $msixPackagePath = Get-ChildItem -Path "$($projectPath)/WebView2_WinUI3_Sample (Package)_*_x64.msix" -File | Select-Object -ExpandProperty FullName
+        Add-AppxPackage -Path $msixPackagePath
+        Get-AppxPackage a6e38587-f17a-4a2e-8022-248694f372b3
+    - name: Run app
+      run: |
+        Start-Process shell:AppsFolder\a6e38587-f17a-4a2e-8022-248694f372b3_yps17xarsp2at!App
+        Start-Sleep 30
+        tasklist
